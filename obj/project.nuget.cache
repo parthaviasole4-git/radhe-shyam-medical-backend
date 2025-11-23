@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W8e78Ywlsk8=",
+  "dgSpecHash": "RtnBqa+MlOs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\parth\\Desktop\\Projects\\radhe-shyam-medical-store\\template-backend\\template-backend.csproj",
+  "projectFilePath": "C:\\Users\\parth\\Desktop\\Projects\\radhe-shyam-medical-store\\radhe-shyam-medical-backend\\template-backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\parth\\.nuget\\packages\\bouncycastle.cryptography\\2.6.1\\bouncycastle.cryptography.2.6.1.nupkg.sha512",
     "C:\\Users\\parth\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
