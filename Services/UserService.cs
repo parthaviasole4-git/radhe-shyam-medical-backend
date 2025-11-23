@@ -14,43 +14,12 @@ public class UserService
         _db = db;
     }
 
-    // GET ALL USERS
-    public async Task<List<User>> GetAllAsync()
-    {
-        return await _db.Users
-            .AsNoTracking()
-            .ToListAsync();
-    }
-
     // GET SINGLE USER
     public async Task<User?> GetByIdAsync(Guid id)
     {
         return await _db.Users
             .AsNoTracking()
             .FirstOrDefaultAsync(u => u.Id == id);
-    }
-
-    // CREATE USER
-    public async Task<User> CreateAsync(User user)
-    {
-        _db.Users.Add(user);
-        await _db.SaveChangesAsync();
-        return user;
-    }
-
-    // UPDATE USER (GENERAL UPDATE)
-    public async Task<bool> UpdateAsync(User user)
-    {
-        var existing = await _db.Users.FindAsync(user.Id);
-        if (existing == null) return false;
-
-        existing.DisplayName = user.DisplayName;
-        existing.Email = user.Email;
-        existing.Phone = user.Phone;
-        existing.Address = user.Address;
-
-        await _db.SaveChangesAsync();
-        return true;
     }
 
     // COMPLETE PROFILE (PROFILE PAGE)
