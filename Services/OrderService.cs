@@ -24,11 +24,15 @@ public class OrderService
         if (!cartItems.Any())
             throw new Exception("Cart is empty.");
 
+        // Calculate total amount
+        var total = cartItems.Sum(c => c.Qty * c.Product!.Price);
+
         var order = new Order
         {
             UserId = userId,
-            Status = "Pending",
+            Status = "Order Placed",
             OrderDate = DateTime.UtcNow,
+            TotalAmount = total,
             Items = cartItems.Select(c => new OrderItem
             {
                 ProductId = c.ProductId,
