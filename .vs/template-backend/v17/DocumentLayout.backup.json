@@ -1,64 +1,155 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\parth\\Desktop\\Projects\\radhe-shyam-medical-store\\radhe-shyam-medical-backend\\",
+  "WorkspaceRootPath": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|c:\\users\\parth\\desktop\\projects\\radhe-shyam-medical-store\\radhe-shyam-medical-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|c:\\users\\lenovo\\desktop\\learn-angular\\template-backend-dot-net\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|solutionrelative:services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|c:\\users\\parth\\desktop\\projects\\radhe-shyam-medical-store\\radhe-shyam-medical-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|c:\\users\\lenovo\\desktop\\learn-angular\\template-backend-dot-net\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|solutionrelative:models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|c:\\users\\lenovo\\desktop\\learn-angular\\template-backend-dot-net\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|c:\\users\\lenovo\\desktop\\learn-angular\\template-backend-dot-net\\dto\\cartitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|solutionrelative:dto\\cartitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|c:\\users\\lenovo\\desktop\\learn-angular\\template-backend-dot-net\\migrations\\20251126113016_migration-name.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|solutionrelative:migrations\\20251126113016_migration-name.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|c:\\users\\lenovo\\desktop\\learn-angular\\template-backend-dot-net\\template-backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|solutionrelative:template-backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|c:\\users\\lenovo\\desktop\\learn-angular\\template-backend-dot-net\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|c:\\users\\lenovo\\desktop\\learn-angular\\template-backend-dot-net\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|c:\\users\\parth\\desktop\\projects\\radhe-shyam-medical-store\\radhe-shyam-medical-backend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{617A7446-80ED-45FF-A715-38851909F506}|template-backend.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedHeight": 863,
           "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\parth\\Desktop\\Projects\\radhe-shyam-medical-store\\radhe-shyam-medical-backend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\parth\\Desktop\\Projects\\radhe-shyam-medical-store\\radhe-shyam-medical-backend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T15:11:24.813Z"
+              "DocumentIndex": 5,
+              "Title": "template-backend.csproj",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\template-backend.csproj",
+              "RelativeDocumentMoniker": "template-backend.csproj",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\template-backend.csproj",
+              "RelativeToolTip": "template-backend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-26T11:14:39.88Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\parth\\Desktop\\Projects\\radhe-shyam-medical-store\\radhe-shyam-medical-backend\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\parth\\Desktop\\Projects\\radhe-shyam-medical-store\\radhe-shyam-medical-backend\\Services\\UserService.cs",
-              "RelativeToolTip": "Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "CartItemRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\DTO\\CartItemRequestDto.cs",
+              "RelativeDocumentMoniker": "DTO\\CartItemRequestDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\DTO\\CartItemRequestDto.cs",
+              "RelativeToolTip": "DTO\\CartItemRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T15:11:02.315Z"
+              "WhenOpened": "2025-11-26T10:56:59.929Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\parth\\Desktop\\Projects\\radhe-shyam-medical-store\\radhe-shyam-medical-backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\parth\\Desktop\\Projects\\radhe-shyam-medical-store\\radhe-shyam-medical-backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAqAAAAAAAAAA==",
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "Services\\CartService.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\Services\\CartService.cs",
+              "RelativeToolTip": "Services\\CartService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T09:24:44.76Z",
+              "WhenOpened": "2025-11-26T10:56:29.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\Models\\CartItem.cs",
+              "RelativeToolTip": "Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T10:53:26.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\Services\\OrderService.cs",
+              "RelativeToolTip": "Services\\OrderService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T10:26:49.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T10:15:45.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T09:12:47.008Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 55,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20251126113016_migration-name.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\Migrations\\20251126113016_migration-name.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251126113016_migration-name.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\learn-angular\\template-backend-dot-net\\Migrations\\20251126113016_migration-name.cs",
+              "RelativeToolTip": "Migrations\\20251126113016_migration-name.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T11:30:19.66Z",
               "EditorCaption": ""
             }
           ]
