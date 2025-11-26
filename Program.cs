@@ -30,6 +30,7 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<OrderService>();
 builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<OcrService>();
 
 var app = builder.Build();
 
