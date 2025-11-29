@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using template_backend.Data;
+using template_backend.DTOs;
 using template_backend.Models;
 
 namespace template_backend.Services;
@@ -7,10 +8,12 @@ namespace template_backend.Services;
 public class OrderService
 {
     private readonly AppDbContext _db;
+    private readonly OtpService _otpService;
 
-    public OrderService(AppDbContext db)
+    public OrderService(AppDbContext db, OtpService otpService)
     {
         _db = db;
+        _otpService = otpService;
     }
 
     // PLACE ORDER
@@ -53,11 +56,21 @@ public class OrderService
     // GET USER ORDERS
     public async Task<List<Order>> GetUserOrdersAsync(Guid userId)
     {
-        return await _db.Orders
-            .Include(o => o.Items)
-            .ThenInclude(i => i.Product)
-            .Where(o => o.UserId == userId)
-            .OrderByDescending(o => o.OrderDate)
+        return await _db.Orders.Where(o => o.UserId == userId).Include(o => o.User).Include(o => o.Items).ThenInclude(i => i.Product).OrderByDescending(o => o.OrderDate).ToListAsync();
+    }
+
+    // GET USER ORDERS DTO
+    public async Task<List<OrderDto>> GetUserOrdersDtoAsync(Guid userId)
+    {
+        return await _db.Orders.OrderByDescending(o => o.OrderDate)
+            .Select(o => new OrderDto
+            {
+                Id = o.Id,
+                UserId = o.UserId,
+                Status = o.Status,
+                OrderDate = o.OrderDate,
+                TotalAmount = o.TotalAmount,
+            })
             .ToListAsync();
     }
 
@@ -65,8 +78,9 @@ public class OrderService
     public async Task<Order?> GetOrderByIdAsync(Guid orderId)
     {
         return await _db.Orders
+            .Include(o => o.User)
             .Include(o => o.Items)
-            .ThenInclude(i => i.Product)
+                .ThenInclude(i => i.Product)
             .FirstOrDefaultAsync(o => o.Id == orderId);
     }
 
@@ -74,20 +88,72 @@ public class OrderService
     public async Task<List<Order>> GetAllOrdersAsync()
     {
         return await _db.Orders
+            .Include(o => o.User)
             .Include(o => o.Items)
-            .ThenInclude(i => i.Product)
+                .ThenInclude(i => i.Product)
             .OrderByDescending(o => o.OrderDate)
             .ToListAsync();
     }
 
-    // UPDATE STATUS (Admin)
-    public async Task<bool> UpdateStatusAsync(Guid orderId, string newStatus)
+    // Mark Out For Delivery
+    public async Task<bool> MarkOutForDelivery(Guid orderId)
+    {
+        var order = await _db.Orders
+            .Include(o => o.User)   // <-- IMPORTANT
+            .FirstOrDefaultAsync(o => o.Id == orderId);
+
+        if (order == null) return false;
+
+        string otp = new Random().Next(100000, 999999).ToString();
+
+        order.DeliveryOtp = otp;
+        order.DeliveryOtpExpiresAt = DateTime.UtcNow.AddDays(1);
+        order.Status = "Out for Delivery";
+
+        // Send OTP to customer (use email, not UserId)
+        await _otpService.SendOtpAsync(order.User.Email, otp);
+
+        await _db.SaveChangesAsync();
+        return true;
+    }
+
+
+    // RESEND DELIVERY OTP
+    public async Task<bool> ResendDeliveryOtpAsync(Guid orderId)
+    {
+        var order = await _db.Orders
+            .Include(o => o.User)
+            .FirstOrDefaultAsync(o => o.Id == orderId);
+
+        if (order == null) return false;
+
+        string otp = new Random().Next(100000, 999999).ToString();
+        order.DeliveryOtp = otp;
+        order.DeliveryOtpExpiresAt = DateTime.UtcNow.AddDays(1);
+
+        // send OTP to User Email
+        await _otpService.SendOtpAsync(order.User.Email, otp);
+
+        await _db.SaveChangesAsync();
+        return true;
+    }
+
+
+    // VERIFY DELIVERY OTP
+    public async Task<bool> VerifyDeliveryOtpAsync(Guid orderId, string otp)
     {
         var order = await _db.Orders.FindAsync(orderId);
         if (order == null) return false;
 
-        order.Status = newStatus;
+        if (order.DeliveryOtp != otp)
+            return false;
+
+        if (order.DeliveryOtpExpiresAt < DateTime.UtcNow)
+            return false;
+
+        order.Status = "Delivered";
         await _db.SaveChangesAsync();
+        // Delivery Verified
         return true;
     }
 
@@ -101,4 +167,5 @@ public class OrderService
         await _db.SaveChangesAsync();
         return true;
     }
+
 }

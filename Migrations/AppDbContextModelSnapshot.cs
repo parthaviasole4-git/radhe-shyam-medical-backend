@@ -116,6 +116,12 @@ namespace template_backend.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<string>("DeliveryOtp")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("DeliveryOtpExpiresAt")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("timestamp with time zone");
 

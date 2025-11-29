@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using template_backend.DTO;
 using template_backend.Services;
 
 namespace template_backend.Controllers;
@@ -53,12 +54,28 @@ public class OrderController : ControllerBase
         return Ok(orders);
     }
 
-    // UPDATE STATUS
+    // UPDATE STATUS + GENERATE OTP
     [HttpPut("{orderId}/status")]
-    public async Task<IActionResult> UpdateStatus(Guid orderId, [FromBody] string status)
+    public async Task<IActionResult> MarkOutForDelivery(Guid orderId)
     {
-        var ok = await _orderService.UpdateStatusAsync(orderId, status);
+        var ok = await _orderService.MarkOutForDelivery(orderId);
         return ok ? Ok(new { message = "Status updated" }) : NotFound();
+    }
+
+    // RESEND DELIVERY OTP
+    [HttpPost("resend-otp/{orderId}")]
+    public async Task<IActionResult> ResendOtp(Guid orderId)
+    {
+        await _orderService.ResendDeliveryOtpAsync(orderId);
+        return Ok(new { message = "OTP resent successfully" });
+    }
+
+    // VERIFY DELIVERY OTP
+    [HttpPost("verify-delivery-otp")]
+    public async Task<IActionResult> VerifyOtp([FromBody] DeliveryOtpVerifyDto dto)
+    {
+        var ok = await _orderService.VerifyDeliveryOtpAsync(dto.OrderId, dto.Otp);
+        return ok ? Ok(new { message = "Delivery verified" }) : BadRequest(new { message = "Invalid or expired OTP" });
     }
 
     // DELETE ORDER

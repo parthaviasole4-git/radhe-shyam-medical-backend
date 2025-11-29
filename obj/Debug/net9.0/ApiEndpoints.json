@@ -144,7 +144,7 @@
   },
   {
     "ContainingType": "template_backend.Controllers.OrderController",
-    "Method": "UpdateStatus",
+    "Method": "MarkOutForDelivery",
     "RelativePath": "api/Order/{orderId}/status",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -153,11 +153,6 @@
       {
         "Name": "orderId",
         "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "status",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -191,6 +186,22 @@
   },
   {
     "ContainingType": "template_backend.Controllers.OrderController",
+    "Method": "ResendOtp",
+    "RelativePath": "api/Order/resend-otp/{orderId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "template_backend.Controllers.OrderController",
     "Method": "GetUserOrders",
     "RelativePath": "api/Order/user/{userId}",
     "HttpMethod": "GET",
@@ -200,6 +211,22 @@
       {
         "Name": "userId",
         "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "template_backend.Controllers.OrderController",
+    "Method": "VerifyOtp",
+    "RelativePath": "api/Order/verify-delivery-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "template_backend.DTO.DeliveryOtpVerifyDto",
         "IsRequired": true
       }
     ],
