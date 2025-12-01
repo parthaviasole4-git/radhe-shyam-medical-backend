@@ -61,11 +61,16 @@ public class AuthController : ControllerBase
         if (string.IsNullOrWhiteSpace(request.Identifier) || string.IsNullOrWhiteSpace(request.Code))
             return BadRequest(new { message = "Identifier and OTP code are required." });
 
-        // Find latest OTP
-        var otpRow = await _db.OtpEntries
+        // --------------------------------------------------
+        // 1. Load OTP fully to avoid streaming reader issues
+        // --------------------------------------------------
+        var otpList = await _db.OtpEntries
+            .AsNoTracking()
             .Where(x => x.Identifier == request.Identifier && x.Otp == request.Code)
             .OrderByDescending(x => x.CreatedAt)
-            .FirstOrDefaultAsync();
+            .ToListAsync();   // <-- FIX 2: fully materialize results
+
+        var otpRow = otpList.FirstOrDefault();
 
         if (otpRow == null)
             return Unauthorized(new { message = "Invalid OTP." });
@@ -73,8 +78,11 @@ public class AuthController : ControllerBase
         if (otpRow.ExpiresAt < DateTime.UtcNow)
             return Unauthorized(new { message = "OTP expired." });
 
-        // Check if user exists
-        var user = await _db.Users.FirstOrDefaultAsync(x => x.Identifier == request.Identifier);
+        // --------------------------------------------------
+        // 2. Query Users — same DbContext is SAFE now
+        // --------------------------------------------------
+        var user = await _db.Users
+            .FirstOrDefaultAsync(x => x.Identifier == request.Identifier);
 
         if (user == null)
         {
@@ -86,16 +94,18 @@ public class AuthController : ControllerBase
                 CreatedAt = DateTime.UtcNow
             };
 
-            _db.Users.Add(user);
+            await _db.Users.AddAsync(user);
             await _db.SaveChangesAsync();
         }
 
-        // Generate JWT
-        string accessToken = _tokenService.GenerateToken(user);
+        // --------------------------------------------------
+        // 3. Generate JWT
+        // --------------------------------------------------
+        string token = _tokenService.GenerateToken(user);
 
         return Ok(new
         {
-            token = accessToken,
+            token,
             user = new
             {
                 user.Id,
@@ -106,4 +116,6 @@ public class AuthController : ControllerBase
             message = "OTP verified."
         });
     }
+
+
 }
