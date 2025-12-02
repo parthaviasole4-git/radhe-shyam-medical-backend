@@ -8,9 +8,9 @@ namespace template_backend.Services;
 public class OrderService
 {
     private readonly AppDbContext _db;
-    private readonly OtpService _otpService;
+    private readonly TwilioOtpService _otpService;
 
-    public OrderService(AppDbContext db, OtpService otpService)
+    public OrderService(AppDbContext db, TwilioOtpService otpService)
     {
         _db = db;
         _otpService = otpService;
@@ -79,6 +79,7 @@ public class OrderService
     {
         return await _db.Orders
             .Include(o => o.User)
+                .ThenInclude(u => u.Address)
             .Include(o => o.Items)
                 .ThenInclude(i => i.Product)
             .FirstOrDefaultAsync(o => o.Id == orderId);
@@ -111,7 +112,7 @@ public class OrderService
         order.Status = "Out for Delivery";
 
         // Send OTP to customer (use email, not UserId)
-        await _otpService.SendOtpAsync(order.User.Email, otp);
+        await _otpService.SendSmsOtpAsync(order.User.Identifier, otp);
 
         await _db.SaveChangesAsync();
         return true;
@@ -132,7 +133,7 @@ public class OrderService
         order.DeliveryOtpExpiresAt = DateTime.UtcNow.AddDays(1);
 
         // send OTP to User Email
-        await _otpService.SendOtpAsync(order.User.Email, otp);
+        await _otpService.SendSmsOtpAsync(order.User.Identifier, otp);
 
         await _db.SaveChangesAsync();
         return true;

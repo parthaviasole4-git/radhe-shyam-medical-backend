@@ -70,14 +70,6 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "Microsoft.IdentityModel.JsonWebTokens": {
-              "target": "Package",
-              "version": "[8.15.0, )"
-            },
-            "Microsoft.IdentityModel.Tokens": {
-              "target": "Package",
-              "version": "[8.15.0, )"
-            },
             "MimeKit": {
               "target": "Package",
               "version": "[4.14.0, )"
@@ -97,6 +89,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[8.15.0, )"
+            },
+            "Twilio": {
+              "target": "Package",
+              "version": "[7.13.7, )"
             }
           },
           "imports": [
@@ -119,11 +115,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x86": {
-          "#import": []
         }
       }
     }

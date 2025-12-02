@@ -21,7 +21,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 builder.Services.AddScoped<AuthService>();
-builder.Services.AddScoped<OtpService>();
+builder.Services.AddScoped<TwilioOtpService>();
 builder.Services.AddScoped<TokenService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICartService, CartService>();
