@@ -27,8 +27,9 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<OrderService>();
 builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<TwilioOtpService>();
 
-var allowedOrigins = new[] { "https://radhe-shyam-medical.vercel.app", "http://localhost:4200" , "http://localhost:51342" };
+var allowedOrigins = new[] { "https://radhe-shyam-medical.vercel.app", "http://localhost:4200", "http://localhost:51342" };
 var policyName = "AllowSpecificOrigin"; 
 
 builder.Services.AddCors(options =>
