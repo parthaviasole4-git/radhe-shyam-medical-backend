@@ -134,3 +134,15 @@ C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-ba
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\Newtonsoft.Json.dll
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\Twilio.dll
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\publish\web.config
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\publish\appsettings.Development.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\publish\appsettings.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\publish\template-backend.deps.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\publish\template-backend.runtimeconfig.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\publish\template-backend.staticwebassets.endpoints.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\publish\publish\web.config
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\publish\publish\appsettings.Development.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\publish\publish\appsettings.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\publish\publish\template-backend.deps.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\publish\publish\template-backend.runtimeconfig.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\bin\Release\net9.0\publish\publish\template-backend.staticwebassets.endpoints.json
