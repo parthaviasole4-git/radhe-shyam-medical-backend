@@ -46,8 +46,7 @@
               "RelativeToolTip": "template-backend.csproj.Backup.tmp",
               "ViewState": "AgIAABAAAAAAAAAAAAAmwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-03T20:12:23.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T20:12:23.687Z"
             },
             {
               "$type": "Document",
@@ -69,7 +68,7 @@
               "RelativeDocumentMoniker": "Services\\Program.cs",
               "ToolTip": "C:\\Users\\parth\\Desktop\\Projects\\radhe-shyam-medical-store\\radhe-shyam-medical-backend\\Services\\Program.cs",
               "RelativeToolTip": "Services\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAB8AAAC6AAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T05:51:42.455Z",
               "EditorCaption": ""
@@ -108,8 +107,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-02T05:46:08.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T05:46:08.759Z"
             }
           ]
         }
