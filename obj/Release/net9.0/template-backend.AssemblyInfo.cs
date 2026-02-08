@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("template-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84af2bb4bcf638f31ac758c7a6473ddc2f7f25ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ead12161c614d0c185fa347d6a4e078c57fa6787")]
 [assembly: System.Reflection.AssemblyProductAttribute("template-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("template-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

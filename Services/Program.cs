@@ -29,29 +29,15 @@ builder.Services.AddScoped<OrderService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<TwilioOtpService>();
 
-var allowedOrigins = new[]
-{
-    "https://radhe-shyam-medical.vercel.app",
-    "https://www.sitarammedical.com",
-    "https://www.radhesyam.com",
-
-    "http://localhost:4200",
-    "http://localhost:51342",
-
-    "capacitor://localhost",
-    "http://localhost"
-};
-var policyName = "AllowSpecificOrigin"; 
-
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: policyName,
-        builder =>
-        {
-            builder.WithOrigins(allowedOrigins)
-                   .AllowAnyHeader()
-                   .AllowAnyMethod();
-        });
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
 });
 
 var app = builder.Build();
@@ -59,7 +45,7 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.UseCors(policyName);
+app.UseCors("AllowAll");
 
 app.UseHttpsRedirection();
 app.MapControllers();

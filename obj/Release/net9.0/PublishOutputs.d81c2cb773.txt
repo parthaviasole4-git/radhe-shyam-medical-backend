@@ -1,4 +1,6 @@
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\template-backend.exe
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\publish\publish\web.config
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\publish\web.config
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\web.config
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\web.config
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\appsettings.Development.json
@@ -7,6 +9,16 @@ C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-ba
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\appsettings.json
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\appsettings.Development.json
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\appsettings.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\publish\appsettings.Development.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\publish\appsettings.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\publish\publish\appsettings.Development.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\publish\publish\appsettings.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\publish\publish\template-backend.deps.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\publish\publish\template-backend.runtimeconfig.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\publish\publish\template-backend.staticwebassets.endpoints.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\publish\template-backend.deps.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\publish\template-backend.runtimeconfig.json
+C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\publish\template-backend.staticwebassets.endpoints.json
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\template-backend.deps.json
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\template-backend.runtimeconfig.json
 C:\Users\parth\Desktop\Projects\radhe-shyam-medical-store\radhe-shyam-medical-backend\publish\publish\publish\template-backend.staticwebassets.endpoints.json
